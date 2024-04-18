@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="19.678" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Share your details to view number" name="check feedback with null value - Example #1.1" time="19.514">
+<failure type="java.lang.AssertionError" message="expected [Thanks! We value your feedback] but found [Feedback contains no characters]">
+<![CDATA[java.lang.AssertionError: expected [Thanks! We value your feedback] but found [Feedback contains no characters]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at StepDefinition.WriteReview.form_should_not_be_submitted(WriteReview.java:176)
+	at ✽.form should not be submitted(file:///C:/Temp/Review/src/test/resource/Features/Reviews.feature:50)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user is logged in on Shiksha application..............................passed
+When user gives null feedback ..............................................passed
+Then form should not be submitted...........................................failed
+]]></system-out>
+</testcase>
+</testsuite>
